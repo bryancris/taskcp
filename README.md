@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com">
-    <img src="https://img.shields.io/badge/-Bryan-blue?style=plastic-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/maria-nguyen-le/" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/-Bryan-blue?style=plastic-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-mcafee-1111a15a/" alt="LinkedIn" />
   </a>
 </p>
 <br/>
