@@ -31,11 +31,6 @@ export default function Hero() {
           <FadeOnView delay={0.6} className="space-x-2 mt-6">
             <Button className="rounded-full shadow-lg">Get Started</Button>
           </FadeOnView>
-          <FadeOnView delay={0.7} className="space-x-2 mt-6">
-            <Button className="rounded-full shadow-lg" variant="outline">
-              GitHub
-            </Button>
-          </FadeOnView>
         </div>
       </div>
       <FadeOnView
