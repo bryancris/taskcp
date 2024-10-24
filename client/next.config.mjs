@@ -1,4 +1,5 @@
 import nextMDX from '@next/mdx';
+import path from 'path';
 
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
@@ -13,6 +14,13 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   experimental: {
     mdxRs: true,
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname)
+    };
+    return config;
   },
   images: {
     remotePatterns: [
