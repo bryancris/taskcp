@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
-using NuGet.ProjectModel;
 using server.Context;
 using server.Models;
 using server.Services;

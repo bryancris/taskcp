@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 using server.Models;
 
 namespace server.Context
@@ -19,7 +20,7 @@ namespace server.Context
                 .Build();
 
             var connectionString = configuration.GetConnectionString("DefaultConnection");
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseNpgsql(connectionString);
         }
 
         public DbSet<server.Models.Task>? Tasks { get; set; }
