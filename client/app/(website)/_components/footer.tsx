@@ -1,5 +1,3 @@
-import { Icons } from '@/components/ui/icons';
-
 const footer = () => (
   <footer className="px-6 dark:bg-[#00021242] bg-opacity-50">
     <div className="py-10 max-w-screen-lg mx-auto flex-between">
