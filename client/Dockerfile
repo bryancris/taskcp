@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY package.json package-lock.json .npmrc ./
 RUN npm install
+COPY prisma ./prisma
+RUN npx prisma generate
+
 
 # Stage 2: Builder
 FROM node:18-alpine AS builder
@@ -14,7 +17,7 @@ COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
-
+RUN npx prisma generate
 RUN npm run build
 
 # Stage 3: Runner
